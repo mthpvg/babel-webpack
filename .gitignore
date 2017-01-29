@@ -1,0 +1,11 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# others
+.env
+node_modules
+bin
+static/bin
+.DS_Store
