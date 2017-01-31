@@ -3,6 +3,12 @@ const firstName = 'Mathieu';
 const age = 31;
 const numbers = [39, 25, 90, 123];
 
+//tree shaking
+import { sayHello } from './module';
+const element = document.createElement('h2'); 
+element.innerHTML = sayHello('World');
+document.body.appendChild(element);
+
 // template literal, ${} is a template placeholder
 const greetings = `
   Hello, ${firstName}.
@@ -53,7 +59,7 @@ console.log(`Spread operator:: ${max}`);
 const numbersArray1 = [3, 4, 5, 7, 8];
 const numbersArray2 = [9, 6, 10, 11];
 const concatArray = [...numbersArray1, ...numbersArray2];
-console.log(`Spread operator:: ${concatArray}`);
+console.log(`Spread operator:: ${concatArray.toString()}`);
 
 // Rest parameters
 const add = function(...numbers) {
