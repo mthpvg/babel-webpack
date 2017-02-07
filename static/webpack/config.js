@@ -1,8 +1,10 @@
-var TARGET = process.env.npm_lifecycle_event;
-var common = require('./common.js');
-var prod = require('./prod');
-var dev = require('./dev');
-var merge = require('webpack-merge');
+const TARGET = process.env.npm_lifecycle_event;
+const common = require('./common.js');
+const prod = require('./prod');
+const dev = require('./dev');
+const merge = require('webpack-merge');
+
+
 
 switch (TARGET) {
   case 'build':
